@@ -1,0 +1,14 @@
+.logo-black {
+  @extend %logo;
+  color: $title-text-color;
+}
+.logo-white {
+  @extend %logo;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  color: $background-text-color;
+}
+.accent {
+  color: $accent-color;
+}
