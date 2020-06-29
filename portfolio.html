@@ -19,43 +19,71 @@
     <header class="heder">
       <div class="container page-header">
         <nav class="main-nav">
-          <a href="" class="logo-black"
-            ><span class="accent">Web</span> Studio</a
-          >
-          <ul class="site-nav">
-            <li class="item"><a class="link" href="./index.html">Студия</a></li>
-            <li class="item">
-              <a class="link current" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="item"><a class="link" href="">Контакты</a></li>
-          </ul>
+          <div class="mobi-container">
+            <a href="" class="logo-black"
+              ><span class="accent">Web</span> Studio</a
+            >
+            <button
+              type="button"
+              class="menu-button is-open"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              data-menu-button
+            >
+              <svg
+                width="40"
+                height="40"
+                aria-label="Переключатель мобільного меню"
+              >
+                <use
+                  class="icon-menu"
+                  href="./images/sprite.svg#close_40px"
+                ></use>
+                <use
+                  class="icon-close"
+                  href="./images/sprite.svg#menu_40px"
+                ></use>
+              </svg>
+            </button>
+          </div>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="site-nav">
+              <li class="item">
+                <a class="link" href="./index.html">Студия</a>
+              </li>
+              <li class="item">
+                <a class="link current" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="item"><a class="link" href="">Контакты</a></li>
+            </ul>
+            <ul class="contacts">
+              <li class="item">
+                <a
+                  class="link"
+                  href="mailto:nfo@devstudio.com"
+                  aria-label="Иконка мейл"
+                >
+                  <svg class="contacts-icon" width="16" height="11">
+                    <use href="./images/sprite.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="item">
+                <a
+                  class="link"
+                  href="tel:+380961111111"
+                  aria-label="Иконка телефона"
+                >
+                  <svg class="contacts-icon" width="10" height="15">
+                    <use href="./images/sprite.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <ul class="contacts">
-          <li class="item">
-            <a
-              class="link"
-              href="mailto:nfo@devstudio.com"
-              aria-label="Иконка мейл"
-            >
-              <svg class="contacts-icon" width="16" height="11">
-                <use href="./images/sprite.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="item">
-            <a
-              class="link"
-              href="tel:+380961111111"
-              aria-label="Иконка телефона"
-            >
-              <svg class="contacts-icon" width="10" height="15">
-                <use href="./images/sprite.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
     <main>
@@ -279,69 +307,73 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-container">
-          <div class="address-container">
-            <a class="logo-white" href=""
-              ><span class="accent">Web</span> Studio</a
-            >
-            <address class="address-footer">
-              г. Киев, пр-т Леси Украинки, 26<br />
-              <a href="mailto:info@example.com" class="link">info@example.com</a
-              ><br />
-              <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-            </address>
-          </div>
-          <div class="link-conteiner">
-            <p class="subscription">присоединяйтесь</p>
-            <ul class="social">
-              <li>
-                <a
-                  href=""
-                  class="link-decoration footer-soc"
-                  aria-label="Иконка инстаграм"
-                >
-                  <svg class="soc-icon" width="20" height="20">
-                    <use href="./images/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  class="link-decoration footer-soc"
-                  aria-label="Иконка твитер"
-                >
-                  <svg class="soc-icon" width="20" height="20">
-                    <use href="./images/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  class="link-decoration footer-soc"
-                  aria-label="Иконка фейсбук"
-                >
-                  <svg class="soc-icon" width="20" height="20">
-                    <use href="./images/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  class="link-decoration footer-soc no-margin"
-                  aria-label="Иконка линкедИн"
-                >
-                  <svg class="soc-icon" width="20" height="20">
-                    <use href="./images/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <div class="address-link-container">
+            <div class="address-container">
+              <a class="logo-white" href=""
+                ><span class="accent">Web</span> Studio</a
+              >
+              <address class="address-footer">
+                г. Киев, пр-т Леси Украинки, 26<br />
+                <a href="mailto:info@example.com" class="link"
+                  >info@example.com</a
+                ><br />
+                <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+              </address>
+            </div>
+            <div class="link-conteiner">
+              <p class="subscription">присоединяйтесь</p>
+              <ul class="social">
+                <li>
+                  <a
+                    href=""
+                    class="link-decoration footer-soc"
+                    aria-label="Иконка инстаграм"
+                  >
+                    <svg class="soc-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="link-decoration footer-soc"
+                    aria-label="Иконка твитер"
+                  >
+                    <svg class="soc-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="link-decoration footer-soc"
+                    aria-label="Иконка фейсбук"
+                  >
+                    <svg class="soc-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="link-decoration footer-soc no-margin"
+                    aria-label="Иконка линкедИн"
+                  >
+                    <svg class="soc-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div>
             <p class="subscription">Подпишитесь на рассылку</p>
             <form class="footer-form">
+              <!-- <label> -->
               <input
                 class="e-mail"
                 type="email"
@@ -349,6 +381,7 @@
                 id="email"
                 placeholder="E-mail"
               />
+              <!-- </label> -->
               <button class="footer-button" type="submit">
                 Подписаться
                 <svg class="send-icon" width="24" height="24">

@@ -5,15 +5,40 @@
   padding-top: 60px;
   padding-bottom: 60px;
   align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.address-link-container {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    display: flex;
+    align-items: baseline;
+  }
 }
 .address-container {
+  text-align: center;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 69px;
+    text-align: left;
+  }
 }
-// .link-conteiner {
-//   margin-right: 94px;
-// }
-// .subscription-container {
-//   display: flex;
-// }
+.link-conteiner {
+  @media screen and (min-width: 1200px) {
+    margin-right: 94px;
+  }
+}
+.subscription-container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
 
 .social {
   .item {
@@ -27,10 +52,13 @@
 
 .address-footer {
   color: $background-text-color;
-  font-style: normal;
-  text-align: center;
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
+    font-style: normal;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 }
 .address-footer .link {
@@ -40,6 +68,7 @@
 }
 .footer .subscription {
   display: block;
+  margin-top: 0;
   margin-bottom: 20px;
 
   color: $background-text-color;
@@ -47,6 +76,10 @@
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+
   text-transform: uppercase;
 }
 .link-decoration.footer-soc {
@@ -55,14 +88,15 @@
   color: $background-text-color;
   margin-right: 10px;
 }
-// .footer-soc.no-margin {
-//   margin-right: 0;
-// }
+.footer-soc.no-margin {
+  margin-right: 0;
+}
 
 .footer-button {
   display: flex;
   align-items: center;
   justify-content: center;
+
   margin-left: auto;
   margin-right: auto;
   padding: 10px 28px;
@@ -87,14 +121,27 @@
 .send-icon {
   fill: currentColor;
 }
-// .footer-form {
-//   display: flex;
-// }
+.footer-form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  text-align: center;
+}
 .e-mail {
-  margin-right: 12px;
   width: 450px;
   height: 50px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+
   padding: 15px 16px;
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);

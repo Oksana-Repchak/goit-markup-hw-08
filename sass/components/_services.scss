@@ -1,8 +1,11 @@
-.services {
-  @media screen and (max-width: 1199px) {
-    display: none;
+.section {
+  &.services-none {
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
   }
-
+}
+.services {
   @extend %list;
   display: flex;
 

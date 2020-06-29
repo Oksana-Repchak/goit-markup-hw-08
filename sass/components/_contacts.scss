@@ -1,39 +1,57 @@
-// .contacts {
-//   @extend %list;
-//   display: flex;
-//   margin-left: auto;
-//   align-items: center;
+.contacts {
+  @extend %list;
 
-//   .item:not(:last-child) {
-//     margin-right: 50px;
-//   }
-//   &-icon {
-//     margin-right: 10px;
-//   }
-// }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 81px;
+  }
 
-// .contacts .link {
-//   & {
-//     display: flex;
-//     align-items: center;
-//     padding-top: 32px;
-//     padding-bottom: 32px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 300px;
+  }
+  .item {
+  }
 
-//     color: var(--primary-text-color);
-//     fill: currentColor;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-//     text-decoration: none;
+  .item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
+  }
+  &-icon {
+    margin-right: 10px;
+  }
+}
 
-//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.contacts .link {
+  & {
+    padding: 0;
+    color: var(--primary-text-color);
+    fill: currentColor;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.16;
 
-//   }
-//   &:hover,
-//   &:focus {
-//     color: $accent-color;
-//     fill: $accent-color;
-//   }
-// }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.16;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.14;
+    }
+
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
