@@ -41,6 +41,14 @@
   .team-image {
     margin-top: 0;
     margin-bottom: 30px;
+    width: 100%;
+    height: 320px;
+    @media screen and (min-width: 768px) {
+      height: 260px;
+    }
+
+    object-fit: cover;
+    object-position: top;
   }
   .team-name {
     margin-top: 0;
