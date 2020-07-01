@@ -16,6 +16,14 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  margin-top: 120px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 208px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 221px;
+  }
+
   transform: translate(-50%, -50%);
 }
 .modal-icon {
