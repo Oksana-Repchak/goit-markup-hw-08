@@ -41,6 +41,12 @@ img {
   padding-right: 15px;
 }
 
+@media screen and (max-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -114,7 +120,7 @@ img {
 @media screen and (min-width: 1200px) {
   .logo-black, .logo-white {
     font-size: 26px;
-    line-height: 1.9;
+    line-height: 1.19;
   }
 }
 
@@ -200,6 +206,7 @@ img {
   }
   .menu-container.is-open {
     display: block;
+    z-index: 2;
   }
 }
 
@@ -1036,6 +1043,10 @@ img {
     margin-bottom: 0;
     margin-right: 12px;
   }
+}
+
+.background-footer {
+  background-color: #2F303A;
 }
 
 .button {
