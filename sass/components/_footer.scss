@@ -130,12 +130,11 @@
   text-align: center;
 }
 .e-mail {
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   @media screen and (min-width: 1200px) {
     width: 358px;
   }
-
   margin-bottom: 20px;
 
   @media screen and (min-width: 1200px) {

@@ -1,4 +1,7 @@
 .heder {
+  @media screen and (max-width: 767px) {
+    position: relative;
+  }
   display: flex;
   align-items: center;
   background-color: $background-text-color;
@@ -7,15 +10,9 @@
     min-height: 80px;
   }
   &.heder-portfolio {
-  border: 1px solid #ececec;
-
+    border: 1px solid #ececec;
   }
 }
 
-.page-header {
-  @media screen and (max-width: 767px) {
-    position: relative;
-  }
-}
-
-
+// .page-header {
+// }
