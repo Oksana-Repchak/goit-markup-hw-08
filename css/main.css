@@ -77,9 +77,6 @@ img {
 }
 
 .heder {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -95,6 +92,9 @@ img {
 
 @media screen and (min-width: 768px) {
   .heder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     min-height: 80px;
   }
 }
@@ -163,6 +163,9 @@ img {
     display: flex;
     padding-top: 16px;
     padding-bottom: 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
