@@ -39,6 +39,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  min-height: inherit;
 }
 
 @media screen and (min-width: 480px) {
@@ -92,9 +93,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .heder {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     min-height: 80px;
   }
 }
@@ -154,6 +152,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: inherit;
 }
 
 @media screen and (max-width: 767px) {

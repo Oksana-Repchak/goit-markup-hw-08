@@ -1,5 +1,6 @@
 .main-nav {
   align-items: center;
+  min-height: inherit;
 
   @media screen and (max-width: 767px) {
     .mobi-container {
